@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvisualization_lib.a  CMakeFiles/visualization_lib.dir/src/RenderManager.cpp.o CMakeFiles/visualization_lib.dir/src/UserInterface.cpp.o
-/usr/bin/ranlib libvisualization_lib.a
