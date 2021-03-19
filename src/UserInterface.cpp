@@ -4,6 +4,8 @@
 // Licensed under the MIT License
 //--------------------------------------------------------------------------------------------------
 
+#include "visualization/UserInterface.hpp"
+
 #include <string>
 #include <iostream>
 #include <algorithm>
@@ -25,7 +27,7 @@ bool UserInterface::initialize()
     renderManager = std::make_unique<RenderManager>(renderer);
 
     // Add all desired sections to the section list
-    sections.emplace_back(std::make_unique<InfoSection>(renderManager));
+    //sections.emplace_back(std::make_unique<InfoSection>(renderManager));
 
     return true;
 }
@@ -133,7 +135,7 @@ void UserInterface::updateScreen()
 {
     for (const auto &section : sections)
     {
-        section->redraw(chip8.getState());
+        section->redraw();
     }
     renderManager->updateScreen();
 }

@@ -18,13 +18,13 @@
 class UserInterface
 {
 public:
-    UserInterface(Chip8 &chip8) : chip8{chip8} {};
+    //UserInterface(Chip8 &chip8) : chip8{chip8} {};
     ~UserInterface();
     bool initialize();
     void run();
 
 private:
-    Chip8 &chip8;
+    //Chip8 &chip8;
     SDL_Window *window;
     SDL_Renderer *renderer;
 

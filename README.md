@@ -1,7 +1,5 @@
 # Cross-Platform Controller Input Visualization
 
-![Emulator Showcase](./emulator.gif)
-
 ## About
 
 

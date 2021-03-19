@@ -51,21 +51,6 @@ void RenderManager::render(const PixelWidget &widget) const
     SDL_RenderFillRect(renderer, &scaledPixel);
 }
 
-void RenderManager::render(const ButtonWidget &widget) const
-{
-    // Determine the correct button index 
-    auto bmpButtonIndex = widget.bitmapIndex * 2 + widget.pressed;
-
-    // Place rectangle over button of bmp to select it
-    SDL_Rect buttonSelector{bmpButtonIndex * (Button::width + Button::bmpMargin),
-                            0, Button::width, Button::height};
-
-    // Copy button from the button bmp to the frame
-    SDL_Rect buttonDestination{widget.xPos, widget.yPos, Button::width, Button::height};
-    setColor(widget.pressed ? Colors::outlineCode : Colors::text);
-    SDL_RenderCopy(renderer, buttons, &buttonSelector, &buttonDestination);
-}
-
 void RenderManager::render(const OutlineWidget &widget) const
 {
     setColor(Colors::outlineCode);

@@ -24,7 +24,7 @@ public:
     virtual ~ISection() = default;
 
     // Use the renderManager to redraw the section with a new state
-    virtual void redraw(const Chip8State &state) = 0;
+    virtual void redraw() = 0;
 
 protected:
     /**

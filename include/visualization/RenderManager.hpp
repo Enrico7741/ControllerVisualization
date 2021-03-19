@@ -29,14 +29,6 @@ struct PixelWidget
     bool set{false};
 };
 
-struct ButtonWidget
-{
-    int xPos;
-    int yPos;
-    int bitmapIndex;
-    bool pressed{false};
-};
-
 struct OutlineWidget
 {
     int xPos;
@@ -62,7 +54,6 @@ public:
     // Overloaded drawing methodes
     void render(const TextWidget &widget) const;
     void render(const PixelWidget &widget) const;
-    void render(const ButtonWidget &widget) const;
     void render(const OutlineWidget &widget) const;
     void render(const SectionBoxWidget &widget) const;
     void updateScreen();
