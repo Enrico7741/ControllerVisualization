@@ -1,0 +1,12 @@
+*build/
+*builds/
+CMakeLists.txt.user
+*~
+/**/*.xcodeproj/**/xcuserdata/
+/**/*.xcodeproj/**/xcshareddata/
+/extern/
+*.pyc
+*.log
+.vscode
+extern
+.DS_Store
