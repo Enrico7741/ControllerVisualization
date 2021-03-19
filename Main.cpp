@@ -11,13 +11,13 @@
 
 int main(int argc, char *argv[])
 {   
-    //UserInterface userInterface(chip8);
-    //if (!userInterface.initialize())
-    //{
-    //    std::cout << "Error: UserInterface initialization failed" << std::endl;
-    //    return EXIT_FAILURE;
-    //}
-    //userInterface.run();
+    UserInterface userInterface;
+    if (!userInterface.initialize())
+    {
+        std::cout << "Error: UserInterface initialization failed" << std::endl;
+        return EXIT_FAILURE;
+    }
+    userInterface.run();
 
     return EXIT_SUCCESS;
 }

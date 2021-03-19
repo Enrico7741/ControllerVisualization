@@ -63,10 +63,10 @@ namespace Layout
 
     namespace MainWindow
     {
-        const int width{1351};
+        const int width{1870};
         const int firstRowHeight{488};  // Heigth of sections in first row of the window
         const int secondRowHeight{317}; // Heigth of sections in second row of the window
-        const int height{firstRowHeight + secondRowHeight + 3 * Box::margin};
+        const int height{680};
     }
 
     namespace DisplayBox

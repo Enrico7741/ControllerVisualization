@@ -61,9 +61,10 @@ public:
 private:
     SDL_Renderer *renderer;
     SDL_Texture *font;
+    SDL_Texture *background;
     
     void setColor(Layout::Color color) const;
-    void renderBackgroundColor();
+    void renderBackground();
     void loadBitmap(SDL_Texture **texture, const std::string &path);
 };
 

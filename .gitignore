@@ -10,3 +10,5 @@ CMakeLists.txt.user
 .vscode
 extern
 .DS_Store
+*data/bitmaps/controller.bmp
+*data/bitmaps/controllerBase.bmp

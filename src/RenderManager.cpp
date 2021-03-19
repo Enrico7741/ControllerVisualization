@@ -12,7 +12,8 @@ RenderManager::RenderManager(SDL_Renderer *renderer)
 {
     this->renderer = renderer;
     loadBitmap(&font, "data/bitmaps/font.bmp");
-    renderBackgroundColor();
+    loadBitmap(&background, "data/bitmaps/controller.bmp");
+    renderBackground();
 }
 
 RenderManager::~RenderManager()
@@ -79,7 +80,7 @@ void RenderManager::updateScreen()
 {
     SDL_RenderPresent(renderer);
     SDL_RenderClear(renderer);
-    renderBackgroundColor();
+    renderBackground();
 }
 
 void RenderManager::setColor(Color color) const
@@ -87,10 +88,9 @@ void RenderManager::setColor(Color color) const
     SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, SDL_ALPHA_OPAQUE);
 }
 
-void RenderManager::renderBackgroundColor()
+void RenderManager::renderBackground()
 {
-    setColor(Colors::background);
-    SDL_RenderFillRect(renderer, nullptr);
+    SDL_RenderCopy(renderer, background, nullptr, nullptr);
 }
 
 void RenderManager::loadBitmap(SDL_Texture **texture, const std::string &path)
