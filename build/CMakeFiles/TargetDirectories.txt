@@ -1,4 +1,0 @@
-/home/enrico/Documents/projects/ControllerVisualization/build/CMakeFiles/rebuild_cache.dir
-/home/enrico/Documents/projects/ControllerVisualization/build/CMakeFiles/edit_cache.dir
-/home/enrico/Documents/projects/ControllerVisualization/build/CMakeFiles/visualization.dir
-/home/enrico/Documents/projects/ControllerVisualization/build/CMakeFiles/visualization_lib.dir
